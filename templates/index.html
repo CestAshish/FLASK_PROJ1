@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Ashish's Resume</title>
+  <style>
+    .circle-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .contact-info h3 {
+      margin-top: 10px;
+    }
+
+  .circle-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .contact-info h3 {
+      margin-top: 10px;
+    }
+    .text-left {
+      text-align: left;
+    }
+    .header-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+{% include 'header.html' %}
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-3 d-flex align-items-center justify-content-center">
+        <picture>
+          <source srcset="static/image.jpg" type="image/svg+xml">
+          <img src="static/image.jpg" class="img-fluid img-thumbnail circle-image" alt="...">
+        </picture>
+      </div>
+      <div class="col-9">
+        <h1>ASHISH SINGH</h1>
+        <div class="contact-info">
+          <h3>Bangalore, Karnataka, 560054.<br>
+              <a href="mailto:ashish.singh.vatss@gmail.com">ashish.singh.vatss@gmail.com</a><br>
+              +91 9305226609
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
